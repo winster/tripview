@@ -1,0 +1,16 @@
+<td-cards>
+  <td-card ng-repeat="card in cards" on-destroy="cardDestroyed($index)" on-swipe="cardSwiped($index)">
+    <div class="image">
+    	<div class="reco-text calm">{{card.title}}</div>
+	    <img ng-src="{{card.thumbnailHiResURL}}">
+	    <div class="row">
+	    	<div class="col reco-text">{{card.duration}}</div>
+	    	<div class="col reco-text textright">{{card.priceFormatted}}</div>
+	    </div>
+	    <div class="row">
+	    	<div class="col reco-text">{{card.startDate}}</div>
+	    	<div class="col reco-text textright">Reviews <strong>{{card.reviewCount}}</strong></div>
+	    </div>
+	  </div>
+  </td-card>
+</td-cards>

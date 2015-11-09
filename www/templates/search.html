@@ -1,0 +1,17 @@
+<ion-view title="Manage Trip">
+  <ion-content class="has-header" padding=true scroll=false>
+    <div class="list">
+      <label class="item item-input">
+        <input type="text" placeholder="PNR Number" ng-model="recloc">
+      </label>
+      <label class="item item-input">
+        <input type="text" placeholder="Last Name" ng-model="lastname">
+      </label>
+      <ion-toggle ng-model="aetm" ng-change="toggleTripSource()" toggle-class="toggle-calm" class="aetmflag">AeTM Mode</ion-toggle>
+    </div>
+    <button class="button button-block button-positive" ng-click="retrieve(recloc, lastname, aetm)">
+      SUBMIT
+    </button>
+    <div class="textcenter" ng-show="spinner"><span>Searching ... </span><ion-spinner></ion-spinner></div>
+  </ion-view>
+</ion-pane>

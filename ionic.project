@@ -1,0 +1,12 @@
+{
+  "name": "tripmanagementSDKApp",
+  "app_id": "ae0081a6",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}

@@ -1,0 +1,108 @@
+<ion-view title="View Trip">
+  <ion-content class="has-header" padding=true has-bouncing=false>
+    <div class="card">
+	  <div class="item item-text-wrap">
+	    Confirmation Number <span class="pullright"><b>{{trip.recLoc}}</b></span>
+	  </div>
+	</div>
+  	<div class="card">
+	  <div class="item item-divider">
+	    <span>
+	    	{{trip.airItineraries[0].departureLocation.cityName}} <i class="icon ion-plane rotate45"></i> {{trip.airItineraries[0].arrivalLocation.cityName}}
+	    </span>
+	    <span class="pullright">
+	    	{{trip.airItineraries[0].departureDate.timeStamp | date:'mediumDate'}}
+	    </span>
+	  </div>
+	  <div class="item item-text-wrap">
+	    <div class="row">
+	    	<div class="col">Flight Details</div>
+	    	<div class="col textright">{{trip.airlineRecLocs[0].airline.name}} / {{trip.airItineraries[0].segments[0].flightNumber}}</div>
+	    </div>
+		<div class="card zeromargin"> 
+			<div class="row">
+				<div class="col">
+				{{trip.airItineraries[0].departureLocation.locationName}}
+				</div>
+				<div class="col textright">
+				{{trip.airItineraries[0].arrivalLocation.locationName}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col calm">
+				{{trip.airItineraries[0].departureDate.timeStamp | date:'MMMdd @ h:mma'}}
+				</div>
+				<div class="col textcenter">
+				Duration {{trip.airItineraries[0].segments[0].formattedFlightTime}}
+				</div>
+				<div class="col textright calm">
+				{{trip.airItineraries[0].arrivalDate.timeStamp | date:'MMMdd @ h:mma'}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+				Terminal {{trip.airItineraries[0].departureTerminal}}
+				</div>
+				<div class="col textright">
+				Terminal {{trip.airItineraries[0].arrivalTerminal}}
+				</div>
+			</div>
+		</div>
+	  </div>
+	  <div class="item item-divider">
+	    {{trip.status}} <span class="pullright balanced">{{trip.airItineraries[0].segments[0].cabins[0].name}}</span>
+	  </div>
+	</div>
+	<div class="card reco" ng-show="recoshow">
+		<div ng-include src="'templates/reco.html'"></div>
+	</div>
+	<div class="card">
+	  <div class="item item-divider">
+	  	<span>
+	    	{{trip.airItineraries[1].departureLocation.cityName}} <i class="icon ion-plane rotate45"></i> {{trip.airItineraries[1].arrivalLocation.cityName}}
+	    </span>
+	    <span class="pullright">
+	    	{{trip.airItineraries[1].departureDate.timeStamp | date:'mediumDate'}}
+	    </span>
+	  </div>
+	  <div class="item item-text-wrap">
+	     <div class="row">
+	    	<div class="col">Flight Details</div>
+	    	<div class="col textright">{{trip.airlineRecLocs[0].airline.name}} / {{trip.airItineraries[1].segments[0].flightNumber}}</div>
+	    </div>
+	    <div class="card zeromargin"> 
+			<div class="row">
+				<div class="col">
+				{{trip.airItineraries[1].departureLocation.locationName}}
+				</div>
+				<div class="col textright">
+				{{trip.airItineraries[1].arrivalLocation.locationName}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col calm">
+				{{trip.airItineraries[1].departureDate.timeStamp | date:'MMMdd @ h:mma'}}
+				</div>
+				<div class="col textcenter">
+				Duration {{trip.airItineraries[1].segments[0].formattedFlightTime}}
+				</div>
+				<div class="col textright calm">
+				{{trip.airItineraries[1].arrivalDate.timeStamp | date:'MMMdd @ h:mma'}}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col">
+				Terminal {{trip.airItineraries[0].departureTerminal}}
+				</div>
+				<div class="col textright">
+				Terminal {{trip.airItineraries[0].arrivalTerminal}}
+				</div>
+			</div>
+		</div>
+	  </div>
+	  <div class="item item-divider">
+	    {{trip.status}} <span class="pullright balanced">{{trip.airItineraries[1].segments[0].cabins[0].name}}</span>
+	  </div>
+	</div>
+  </ion-content>
+</ion-view>
