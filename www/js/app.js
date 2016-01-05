@@ -91,19 +91,19 @@ angular.module('starter', ['ionic', 'ionic.contrib.ui.tinderCards'])
   $scope.tripkey=$scope.lastname+':'+$scope.recloc;
   this.amaConfig = {
         trip: {
-            URL:"https://www.checkmytrip.com/cmt/apf/mcmtng2/",
-            SITE:"NCMTNCMT",
-            OCTX:"TCUAT"
+            URL:"https://XXXXXXXXXXXX",
+            SITE:"XXXXXXXX",
+            OCTX:"XXXXX"
         },
         reco: {
-            URL:"https://ncmt1.dev.amadeus.net/cmt/apf/recoengine/",
-            SITE:"NCMTNCMT",
-            OCTX:"TCUAT"
+            URL:"https://XXXXXXXXXXXX",
+            SITE:"XXXXXXXX",
+            OCTX:"XXXXX"
         },
         aetm:{
-            URL:"http://aetm-me1.dev.amadeus.net/aetm/apf/aetmme/",
-            SITE:"YCGAYCGA",
-            OCTX:"MOBILE"
+            URL:"https://XXXXXXXXXXXX",
+            SITE:"XXXXXXXX",
+            OCTX:"XXXXX"
         },
         APPVERSION : "V5",
         LANGUAGE : "GB"

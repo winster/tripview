@@ -4,19 +4,19 @@ com.ama = com.ama || {};
 com.ama.atm = function(config) {
     var defaultConfig = {
         trip: {
-            URL:"https://www.checkmytrip.com/cmt/apf/mcmtng/",
-            SITE:"NCMTNCMT",
-            OCTX:"TCUAT"
+            URL:"https://XXXXXXXXXXXX",
+            SITE:"XXXXXXXX",
+            OCTX:"XXXXX"
         },
         reco: {
-            URL:"https://www.checkmytrip.com/cmt/apf/recoengine/",
-            SITE:"NCMTNCMT",
-            OCTX:"TCUAT"
+            URL:"https://XXXXXXXXXXXX",
+            SITE:"XXXXXXXX",
+            OCTX:"XXXXX"
         },
         aetm:{
-            URL:"https://aetm-me1.dev.amadeus.net/aetm/apf/aetmme/",
-            SITE:"YCGAYCGA",
-            OCTX:"MOBILE"
+            URL:"https://XXXXXXXXXXXX",
+            SITE:"XXXXXXXX",
+            OCTX:"XXXXX"
         },
         APPVERSION : "V5",
         LANGUAGE : "GB"
